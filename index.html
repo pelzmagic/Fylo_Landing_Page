@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
    <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
 <body>
@@ -25,7 +26,11 @@
   <div class="left_content">
     <h1>All your files in one secure <br />location, accessible anywhere.</h1>
     <p>Fylo stores your most important files in one secure location. Access <br /> them wherever you need, share and collaborate with friends, family,<br /> and co-workers.<br /></p>
-    <input type="email" name="email" placeholder="Enter your email" autocomplete="on" required> <button class="hero_button" type="submit">Get started</button>
+    <label id="email_label"></label>
+    <input type="email" name="email" placeholder="Enter your email" autocomplete="on" required onkeyup="validateEmail()"><button class="hero_button" type="submit" >Get started</button>
+    <div class="error">
+      <span></span>
+    </div>
   </div>
   <div class="right_content">
     <img class="illustration_1"src="./images/illustration-1.svg" alt="illustration" width="500" height="350">
@@ -66,7 +71,9 @@
     </div>
     <div class="action_right_content">
       <div class="action_input">
-      <input class="call_to_action_input" type="email" autocomplete="on" name="email" placeholder="email@example.com" required>
+      <input class="call_to_action_input" type="email" autocomplete="on" name="email" placeholder="email@example.com" required onkeyup="validateActionEmail()">
+      </div>
+      <div class="call_to_action_error">
       </div>
       <button type="submit" class="action_button">Get Started for Free</button>
     </div>

@@ -84,6 +84,14 @@ input {
     height: 2rem;
     padding-left: 1rem;
     opacity: 0.5;
+    border-radius:5px;
+    border:0.5px solid black;
+    outline: none;
+   
+}
+.error {
+    font-size:13px;
+    color:red;
 }
 .hero_button {
     width: 10rem;
@@ -193,6 +201,10 @@ h2 {
     width:  100%;
     background-color: var(--SATURATED-BLUE);
 }
+.call_to_action_error {
+    font-size:11px;
+    color: var(--LIGHTGRAY);
+}
 .action_header {
     margin-top: 0;
     font-family: "Raleway", sans-serif;
@@ -211,10 +223,10 @@ h2 {
     width: 27rem;
     height:2.5rem;
     opacity: 0.4;
-    border:none;
     border-radius:5px;
     background-color: #fff;
     margin-top: 0;
+    outline:none;
 }
 .action_button {
     background-color:var(--BRIGHT-BLUE);
@@ -226,13 +238,14 @@ h2 {
     font-size: 12px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 .action_right_content {
     margin-top: 80px;
 }
 .action_input {
     background-color:white;
+    border-radius:5px;
 }
 .action_details {
     font-size: 13px;
