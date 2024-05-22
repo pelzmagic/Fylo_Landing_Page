@@ -353,7 +353,7 @@ li {
         display: flex;
         flex-direction: column;
         text-align: center;
-        
+        position: relative;
     }
     .feature_text {
         margin-left:0;
@@ -386,6 +386,11 @@ li {
         width: 73%;
         margin: auto;
         margin-top: 30px;
+    }
+    .error {
+        position:absolute;
+        top:16.4rem;
+        left:7.3rem;
     }
     .hero_button {
         width:72.5%;
