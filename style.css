@@ -570,6 +570,49 @@ input {
         margin-left: 3rem;
     }
 }
+@media screen and (min-width:1440px) {
+    .logo {
+        margin-left: 130px;
+    }
+    header {
+        gap: 47rem;
+    }
+    .nav_items {
+        width: 20%;
+    }
+   .left_content {
+    margin-left: 17rem;
+   }
+   .main {
+    gap: 9rem;
+   }
+   .feature_text {
+    margin-left: 17rem;
+}
+.second_main {
+    gap: 9rem;
+    height: 65vh;
+}
+.call_to_action {
+    height: 30vh;
+}
+.action_content {
+    gap: 17rem;
+}
+.action_left_content {
+    margin-left: 17rem;
+}
+.call_to_action_error {
+    font-size:13px;
+    color:red;
+ }
+ .footer_logo {
+    margin-left: 17rem;
+ }
+ .footer_details1 {
+    margin-left: 17rem;
+ }
+}
 /* @media screen and (min-width:426px) and (max-width: 545px) {
     body {
         border: 1px solid black;
